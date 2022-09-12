@@ -5,6 +5,14 @@ import { motion } from "framer-motion";
 import "./Navbar.scss";
 import { images } from "../../constants";
 
+const localize = {
+  home: "Начало",
+  about: "О себе",
+  work: "Работы",
+  skills: "Навыки",
+  contact: "Контакты",
+};
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
@@ -17,7 +25,7 @@ const Navbar = () => {
         {["home", "about", "work", "skills", "contact"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
-            <a href={`#${item}`}>{item}</a>
+            <a href={`#${item}`}>{localize[item]}</a>
           </li>
         ))}
       </ul>

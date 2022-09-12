@@ -27,7 +27,7 @@ const Testimonial = () => {
       setBrands(data);
     });
   }, []);
-
+  if (testimonials.length === 0) return null;
   return (
     <>
       {testimonials.length && (

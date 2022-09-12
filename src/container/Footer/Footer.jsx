@@ -64,7 +64,7 @@ const Footer = () => {
             <input
               className="p-text"
               type="text"
-              placeholder="Your Name"
+              placeholder="Введите имя"
               name="username"
               value={username}
               onChange={handleChangeInput}
@@ -74,7 +74,7 @@ const Footer = () => {
             <input
               className="p-text"
               type="email"
-              placeholder="Your Email"
+              placeholder="Введите электронный адрес"
               name="email"
               value={email}
               onChange={handleChangeInput}
@@ -83,14 +83,14 @@ const Footer = () => {
           <div>
             <textarea
               className="p-text"
-              placeholder="Your Message"
+              placeholder="Ваше сообщение"
               value={message}
               name="message"
               onChange={handleChangeInput}
             />
           </div>
           <button type="button" className="p-text" onClick={handleSubmit}>
-            {!loading ? "Send Message" : "Sending..."}
+            {!loading ? "Отправить" : "Отправляю..."}
           </button>
         </div>
       ) : (
